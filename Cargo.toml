@@ -11,9 +11,6 @@ path="src/_exponential_smoothing.rs"
 # "cdylib" is necessary to produce a shared library for Python to import from.
 crate-type = ["cdylib"]
 
-[build]
-rustflags = ["-C", "target-cpu=native"]
-
 [profile.dev]
 incremental = true
 

@@ -8,6 +8,6 @@ dependencies = ["numpy"]
 
 [tool.maturin]
 python-source = "python"
-module-name = "rust_test._exponential_smoothing"
+module-name = "exponential_smoothing._exponential_smoothing"
 # "extension-module" tells pyo3 we want to build an extension module (skips linking against libpython.so)
 features = ["pyo3/extension-module"]
