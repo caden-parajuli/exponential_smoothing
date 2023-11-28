@@ -7,7 +7,6 @@ edition = "2021"
 
 [lib]
 name = "exponential_smoothing"
-path="src/_exponential_smoothing.rs"
 # "cdylib" is necessary to produce a shared library for Python to import from.
 crate-type = ["cdylib"]
 
@@ -32,6 +31,8 @@ lto = "thin"
 rayon = "1.8"
 ndarray = "0.15.6"
 numpy = "0.20"
+cobyla = "0.5.1"
+
 
 [dependencies.pyo3]
 version = "0.20.0"

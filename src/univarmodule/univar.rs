@@ -5,5 +5,5 @@ pub fn single_predict(alpha: f64, data: &[f64]) -> f64 {
         result += weight * x;
         weight *= 1f64 - alpha;
     }
-    return result;
+    result
 }
