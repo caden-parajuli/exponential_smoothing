@@ -3,11 +3,11 @@ requires = ["maturin>=1.0,<2.0"]
 build-backend = "maturin"
 
 [project]
-name = "rust_test"
-dependencies = ["numpy"]
+name = "exp_smooth"
+dependencies = ["numpy", "xarray"]
 
 [tool.maturin]
 python-source = "python"
-module-name = "exponential_smoothing._exponential_smoothing"
+module-name = "exp_smooth._exp_smooth"
 # "extension-module" tells pyo3 we want to build an extension module (skips linking against libpython.so)
 features = ["pyo3/extension-module"]
