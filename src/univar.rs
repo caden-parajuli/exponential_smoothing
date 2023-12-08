@@ -85,6 +85,7 @@ fn nse(alpha: f64, l: f64, data: &[f64], test_cutoff: usize) -> f64 {
     1.0 - loss / variance
 }
 
+/// Fit model using a grid search
 fn grid_search(
     alpha_bounds: (f64, f64),
     l_bounds: (f64, f64),
