@@ -37,6 +37,7 @@ fn predict_all(alpha: f64, l: f64, data: &[f64]) -> Vec<f64> {
     arr
 }
 
+/// MSE loss function used for training the model
 fn mse_loss(alpha: f64, l: f64, data: &[f64]) -> f64 {
     let mut pred = l;
     let mut loss = 0.0;

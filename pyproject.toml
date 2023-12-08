@@ -4,7 +4,7 @@ build-backend = "maturin"
 
 [project]
 name = "exp_smooth"
-dependencies = ["numpy", "xarray"]
+dependencies = ["numpy", "xarray", "matplotlib"]
 
 [tool.maturin]
 python-source = "python"
